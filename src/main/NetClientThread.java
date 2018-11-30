@@ -15,14 +15,14 @@ public class NetClientThread {
             BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
             Scanner scanner = new Scanner(System.in);
             //Растительное масло;
-            String request = "Яйцо куриное;Соль;Сахар;Молоко;Пшеничная мука;Гашеная сода;Растительное масло;";
-
+            String request = ";Яйцо куриное;Соль;Сахар;Молоко;Пшеничная мука;Гашеная сода;Растительное масло;Картофель;Говядина;Курица;Вода;Какао;Сода;Разрыхлитель;Ванилин;Ванильный сахар;Сливка;Сливочное масло;Подсолнечное масло;Перец;";
+//            String request = "";
 //            System.out.println("Введите ингредиенты. Для поиска ничего не вводить.");
 //            String ing = scanner.nextLine();
-//            while (!ing.isEmpty()){
+//           while (!ing.isEmpty()){
 //                request += ing + ";";
 //                ing = scanner.nextLine();
-//            }
+//           }
             System.out.println("Поиск рецепта по ингредиентам \n" + request);
             ps.println(request);
 
